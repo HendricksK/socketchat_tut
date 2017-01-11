@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { ChatService } from './services/chat.service';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+    moduleId: module.id,
+    selector: 'my-app',
+    templateUrl: 'app.component.html',
+    providers: [ChatService]
 })
 export class AppComponent  { name = 'Angular'; }
